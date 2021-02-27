@@ -11,19 +11,6 @@ export default class About extends React.Component<Props, State> {
 
     constructor(props: Props) {
         super(props);
-
-        fetch("http://localhost:3001/register", {
-            headers: {"Content-Type": "application/json"},
-            method: "POST",
-            body: JSON.stringify({
-                name: "test",
-                email: "test@gmail.com",
-                password: "password"
-            })
-        })
-        .then(data => {
-            console.log(data);
-        });
     }
 
     render() {

@@ -41,7 +41,7 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                     <Link to="/login">
                         <NavBtn>Login</NavBtn>
                     </Link>
-                    <Link to="/signup">
+                    <Link to="/register">
                         <NavBtn>Sign Up</NavBtn>
                     </Link>
                 </div>
