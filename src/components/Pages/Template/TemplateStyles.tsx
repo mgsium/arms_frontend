@@ -10,6 +10,7 @@ const Styles = {
         & .page-header {
             font-family: Quicksand, sans-serif;
             font-size: 38pt;
+            text-align: center;
             /*padding: 15px 22px;
             background: #15202b;
             color: white;

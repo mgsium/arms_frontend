@@ -30,6 +30,12 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                 <Link to="/about">
                     <NavBtn>About</NavBtn>
                 </Link>
+                <Link to="/make-req">
+                    <NavBtn>Make a Request</NavBtn>
+                </Link>
+                <Link to="/make-ofr">
+                    <NavBtn>Make an Offer</NavBtn>
+                </Link>
 
                 <div className="ml-auto" style={{ display: "inline-block" }}>
                     <Link to="/login">

@@ -22,6 +22,7 @@ export default class Template extends React.Component<Props, State> {
                     <br/>
                     {this.props.children}
                 </div>
+                <br/><br/><br/>
                 <TemplateFooter/>
             </>
         )

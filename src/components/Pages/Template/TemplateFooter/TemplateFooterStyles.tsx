@@ -5,6 +5,7 @@ const Styles = {
         font-family: Quicksand, sans-serif;
         border-top: 1px solid #DCDCDC;
         font-size: 10pt;
+        background: white;
 
         & .navbar-brand {
             font-size: 11pt;

@@ -20,8 +20,9 @@ export default class App extends React.Component<Props, State> {
             <BrowserRouter>
                 <Switch>
                     {/* Paths */}
-                    <Route path="/"     component={ Home } exact/>
-                    <Route path="/about"     component={ About } exact/>
+                    <Route path="/"             component={ Home }          exact/>
+                    <Route path="/about"        component={ About }         exact/>
+                    {/* <Route path="/new-req"      component={  }          exact/> */}
                 </Switch>
             </BrowserRouter>
         )

@@ -7,6 +7,7 @@ const Styles = {
         width: 100%;
         height: 100%;
         padding: 10px;
+        margin: 10px;
         transition: all 0.25s;
         display: inline-block;
 
@@ -29,6 +30,7 @@ const Styles = {
         &:hover {
             cursor: pointer;
             background: whitesmoke;
+            transform: scale(1.04);
 
             & svg {
                 fill: red;
