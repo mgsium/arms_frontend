@@ -20,6 +20,8 @@ export default class TemplateNavbar extends React.Component<Props, State> {
         return (
             <Navbar variant="dark" className={cx( Styles.templateNavbarStyles )}>
                 <Navbar.Brand>
+                    <img src="../../../public/assets/img/svg/ArmstrongLogo.svg" height={30} width={30}/>
+                    &nbsp;
                     Armstrong
                 </Navbar.Brand>
                 <Link to="/">
@@ -29,9 +31,14 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                     <NavBtn>About</NavBtn>
                 </Link>
 
-                <Link className="ml-auto" to="/login">
-                    <NavBtn>Login</NavBtn>
-                </Link>
+                <div className="ml-auto" style={{ display: "inline-block" }}>
+                    <Link to="/login">
+                        <NavBtn>Login</NavBtn>
+                    </Link>
+                    <Link to="/signup">
+                        <NavBtn>Sign Up</NavBtn>
+                    </Link>
+                </div>
             </Navbar>
         )
     }
