@@ -17,12 +17,15 @@
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
+    "@types/google-map-react": "^2.1.0",
     "@types/jquery": "^3.5.5",
     "@types/webfontloader": "^1.6.32",
+    "google-map-react": "^2.1.9",
     "install": "^0.13.0",
     "jquery": "^3.5.1",
     "react-feather": "^2.0.9",
     "react-spinners-kit": "^1.9.1",
+    "react-spring": "^8.0.27",
     "source-map-loader": "^1.0.0"
   },
   "devDependencies": {
