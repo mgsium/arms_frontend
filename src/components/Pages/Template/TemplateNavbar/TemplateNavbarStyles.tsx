@@ -6,6 +6,7 @@ const Styles = {
 
         & .navbar-brand {
             font-family: Quicksand, sans-serif;
+            font-weight: semi-bold;
         }
     `
 };

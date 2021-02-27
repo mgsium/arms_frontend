@@ -1,9 +1,11 @@
 import React from "react";
 
-import { Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import { cx } from "emotion";
 import Styles from "./TemplateNavbarStyles";
+import NavBtn from "./NavBtn";
 
 type Props = {};
 type State = {};
@@ -20,6 +22,16 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                 <Navbar.Brand>
                     Armstrong
                 </Navbar.Brand>
+                <Link to="/">
+                    <NavBtn>Home</NavBtn>
+                </Link>
+                <Link to="/about">
+                    <NavBtn>About</NavBtn>
+                </Link>
+
+                <Link className="ml-auto" to="/login">
+                    <NavBtn>Login</NavBtn>
+                </Link>
             </Navbar>
         )
     }

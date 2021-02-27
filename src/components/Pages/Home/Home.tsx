@@ -16,7 +16,8 @@ export default class Home extends React.Component<Props, State> {
     render() {
         return (
             <Template>
-
+                <h1 className="page-header">Home</h1>
+                <hr/>
             </Template>
         )
     }
