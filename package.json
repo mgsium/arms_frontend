@@ -18,7 +18,9 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
     "@types/webfontloader": "^1.6.32",
+    "install": "^0.13.0",
     "react-feather": "^2.0.9",
+    "react-spinners-kit": "^1.9.1",
     "source-map-loader": "^1.0.0"
   },
   "devDependencies": {

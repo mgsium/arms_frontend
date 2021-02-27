@@ -28,6 +28,9 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                 <Link to="/about">
                     <NavBtn>About</NavBtn>
                 </Link>
+                <Link to="/load">
+                    <NavBtn>Load</NavBtn>
+                </Link>
 
                 <Link className="ml-auto" to="/login">
                     <NavBtn>Login</NavBtn>
