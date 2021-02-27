@@ -22,7 +22,6 @@ export default class App extends React.Component<Props, State> {
                     {/* Paths */}
                     <Route path="/"     component={ Home } exact/>
                     <Route path="/about"     component={ About } exact/>
-                    <Route path="/load"     component={ LoadingPage } exact/>
                 </Switch>
             </BrowserRouter>
         )
