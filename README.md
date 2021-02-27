@@ -1,2 +1,4 @@
-# easynf
-Boilerplate code for a react-typescript frontend.
+# Armstrong Backend 
+
+(AngelHacks 2.0 Project!) A web app providing organic incentives to build peer mentoring networks.
+
