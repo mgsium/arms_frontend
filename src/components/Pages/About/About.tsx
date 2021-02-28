@@ -18,12 +18,8 @@ export default class About extends React.Component<Props, State> {
     render() {
         return (
             <Template>
-                <div className={cx(Styles.wrap)}>
-                    <div className={cx( Styles.divtest)}>
-                        <p>About</p>
-                    </div>
-                </div>
-                <br></br>
+                <h1 className="page-header">About</h1>
+                <br/>
                 <div className={cx(Styles.mentorReqCardStyles)}>
                     <h2>The Best way to Mentor....</h2>
                     <p>Here at Armstrong, we believe that one-to-one mentoring should be an option for students across the world.

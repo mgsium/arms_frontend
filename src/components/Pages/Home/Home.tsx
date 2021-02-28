@@ -22,7 +22,7 @@ export default class Home extends React.Component<Props, State> {
             <Template>
                 {/*Explore*/}
                 <h1 className="page-header">Home</h1>
-                <hr/>
+                <br/>
                 <Container fluid>
                     <Row>
                         <Col xl={3} lg={6}>
@@ -55,10 +55,10 @@ export default class Home extends React.Component<Props, State> {
                         </Col>
                     </Row>
                 </Container>
-                <br/><br/>
+                <br/><br/><br/>
                 {/*Exploration Section*/}
                 <h1 id="explore" className="page-header">Explore</h1>
-                <hr/>
+                <br/>
                 <div style={{ padding: 20 }}>
                     <MentorRequestCard/>
                     <MentorRequestCard/>

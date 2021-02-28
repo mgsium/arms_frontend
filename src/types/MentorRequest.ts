@@ -1,6 +1,6 @@
 import Tag from "./Tag";
 
-type Request = {
+type MentorRequest = {
     name: string,
     description: string,
     location: {
