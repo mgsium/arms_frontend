@@ -8,6 +8,6 @@ type MentorRequest = {
         lng: number
     },
     Tag: Tag
-}
+};
 
-export default Tag
+export default MentorRequest;
