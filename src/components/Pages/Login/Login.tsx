@@ -14,7 +14,8 @@ import AuthCredentials from "../../../types/AuthCredentials";
 type Props = {};
 type State = {
     authCredentialsBuilder: AuthCredentialsBuilder,
-    emailIsValid: boolean
+    emailIsValid: boolean,
+    showErrorMsg: boolean
 };
 
 export default class Login extends React.Component<Props, State> {
@@ -26,7 +27,8 @@ export default class Login extends React.Component<Props, State> {
 
         this.state = {
             authCredentialsBuilder: new AuthCredentialsBuilder(),
-            emailIsValid: true
+            emailIsValid: true,
+            showErrorMsg: (new URLSearchParams(window.location.search)).has("error")
         }
 
         // Method Bindings
@@ -106,6 +108,9 @@ export default class Login extends React.Component<Props, State> {
                                     defaultValue=""
                                 />
                             </Form.Group>
+                            <div className={cx( Styles.errorBoxStyles )} hidden={!this.state.showErrorMsg}>
+                                The username and password combination does not match any account on record. Please try again.
+                            </div>
                             <Button 
                                 size="lg" 
                                 variant="success"
