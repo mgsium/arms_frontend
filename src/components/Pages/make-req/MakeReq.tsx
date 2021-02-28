@@ -1,7 +1,7 @@
 import React from "react";
 
 import { cx } from "emotion";
-import Styles from "./make-reqStyles";
+import Styles from "./MakeReqStyles";
 import Template from "../Template/Template";
 import { Form, Button } from "react-bootstrap";
 import AuthCard from "../../Widgets/AuthCard/AuthCard";

@@ -1,5 +1,5 @@
-import Tag from "../types/Request";
-import Request from "../types/Request";
+import Tag from "../types/Tag";
+import Request from "../types/MentorRequest";
 
 export default class RequestBuilder {
 

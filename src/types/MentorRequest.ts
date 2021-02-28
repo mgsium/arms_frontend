@@ -7,7 +7,7 @@ type MentorRequest = {
         lat: number,
         lng: number
     },
-    Tag: Tag
+    tag: Tag
 }
 
-export default Tag
+export default MentorRequest
