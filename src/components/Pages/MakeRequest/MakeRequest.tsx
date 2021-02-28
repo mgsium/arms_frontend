@@ -12,6 +12,7 @@ import DescReqPage from "./DescReqPage/DescReq";
 import RequestBuilder from '../../../helpers/RequestBuilder';
 import Tag from "../../../types/Tag";
 import MentorRequest from '../../../types/MentorRequest';
+import Location from './LocationReqPage/Location';
 
 
 type Props = {};
@@ -77,6 +78,10 @@ export default class MakeRequest extends React.Component<Props, State> {
                 <DescReqPage
                     currentPageIndex={this.state.currentPageIndex}
                     confirmDescription={this.confirmDescAndTags}
+                    updatePageIndex={this.updatePageIndex}
+                />
+                <Location
+                    currentPageIndex={this.state.currentPageIndex}
                     updatePageIndex={this.updatePageIndex}
                 />
             </Template>

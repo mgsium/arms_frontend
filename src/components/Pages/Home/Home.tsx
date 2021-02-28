@@ -20,16 +20,47 @@ export default class Home extends React.Component<Props, State> {
     }
 
     render() {
-        const dummyRequest: MentorRequest = {
+        const dummyRequest1: MentorRequest = {
             id: "dummy-id",
-            name: "Request for Comment",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur, ipsum ac ultrices congue, velit tellus tempor libero, eu rhoncus arcu est quis lacus. Curabitur tincidunt pretium sem, ac posuere libero varius eu. Pellentesque interdum massa sit amet justo imperdiet, et elementum nisi malesuada. Curabitur metus leo, euismod at nulla sed, scelerisque dictum mauris. Sed aliquam cursus scelerisque. Cras at neque ultrices, tincidunt risus in, venenatis eros. Fusce eu purus aliquet, tempor eros convallis, tristique neque. Vestibulum eget ligula porttitor, accumsan purus et, pretium tellus. Phasellus sagittis sodales commodo. Mauris id efficitur tellus, vel auctor libero.",
+            name: "Long Division",
+            description: "Mathematics mentor in London to help get me over my life long fear of Long Division",
             location: {
-                lat: 22.2,
-                lng: 22.2
+                lat: 51.5039148256577,
+                lng: -0.1242160376895854
             },
             tags: []
         };
+        const dummyRequest2: MentorRequest = {
+            id: "dummy-id",
+            name: "Undergraduate Biology",
+            description: "I am struggling with the internals of the Human Biology",
+            location: {
+                lat: 52.5116381937997,
+                lng: 13.434090084943454
+            },
+            tags: []
+        };
+        const dummyRequest3: MentorRequest = {
+            id: "dummy-id",
+            name: "help with Shakespearean Works",
+            description: "We're going over Macbeth and I really have no clue what to do or have any original ideas",
+            location: {
+                lat: 40.737211650241754, 
+                lng: -74.1439586891879
+            },
+            tags: []
+        };
+        const dummyRequest4: MentorRequest = {
+            id: "dummy-id",
+            name: "P = NP",
+            description: "Our teacher gave us this for homework and I'm struggling a bit",
+            location: {
+                lat: 39.76234169646559, 
+                lng: -86.25607408799662
+            },
+            tags: []
+        };
+
 
         return (
             <Template>
@@ -73,10 +104,10 @@ export default class Home extends React.Component<Props, State> {
                 <h1 id="explore" className="page-header">Explore</h1>
                 <br/>
                 <div style={{ padding: 20 }}>
-                    <MentorRequestCard request={dummyRequest}/>
-                    <MentorRequestCard request={dummyRequest}/>
-                    <MentorRequestCard request={dummyRequest}/>
-                    <MentorRequestCard request={dummyRequest}/>
+                    <MentorRequestCard request={dummyRequest1}/>
+                    <MentorRequestCard request={dummyRequest2}/>
+                    <MentorRequestCard request={dummyRequest3}/>
+                    <MentorRequestCard request={dummyRequest4}/>
                 </div>
             </Template>
         )

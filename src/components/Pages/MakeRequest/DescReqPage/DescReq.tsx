@@ -88,13 +88,12 @@ export default class DescReq extends React.Component<Props, State> {
                             </Form.Text>
                         </Form.Group>
                     </Form>
-                    <Button variant="success" className="ml-auto mr-auto" style={{ display: "table", width:"40%" }} onClick={() => { this.props.updatePageIndex(2); this.props.confirmDescription(this.state.description, this.state.tags)}}>
+                    <Button variant="success" className="ml-auto mr-auto" style={{ display: "table", width:"40%" }} onClick={() => { this.props.updatePageIndex(2)}}>
                         <h3 style={{ margin: 0, display: "inline-block" }}>Set your location&nbsp;<ArrowRight/></h3>
                     </Button>
                 </AuthCard>
                 <br/><br/>
 
-                
             </div>
         )
     }
