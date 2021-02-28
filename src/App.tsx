@@ -30,7 +30,6 @@ export default class App extends React.Component<Props, State> {
                     <Route path="/about"                component={ About }                 exact/>
                     <Route path="/login"                component={ Login }                 exact/>
                     <Route path="/register"             component={ Register }              exact/>
-                    <Route path="/contractDisplay"      component={ ContractDisplayPage }   exact/>
                     <Route path="/make-ofr"             component={ MakeOffer }             exact/>
                     <Route path="/make-req"             component={ MakeRequest }           exact/>
                     <Route path="/request"              component={ RequestPage }           exact/>
