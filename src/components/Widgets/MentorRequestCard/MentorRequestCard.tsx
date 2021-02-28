@@ -15,7 +15,9 @@ export default class MentorRequestCard extends React.Component<Props, State> {
     render() {
         return (
             <div className={cx( Styles.mentorReqCardStyles )}>
-                <h2>Test</h2>
+                <strong><p>Name: <a>Placeholder Text</a></p></strong>
+                <div className={cx(Styles.mentorReqCardStyles)}></div>
+                <p>Subject: <a>Placeholder Text</a></p>
             </div>
         )
     }
