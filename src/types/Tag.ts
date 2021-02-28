@@ -1,5 +1,5 @@
 type Tag = {
-    name: String
+    name: string
 }
 
-export default Tag
+export default Tag;
