@@ -4,16 +4,14 @@ const Styles = {
     divtest: css`
         height: 100px;
         width: 80%;
-        border-size: 1px;
-        border-style: solid;
-        border-color: black;
+        border: 2px solid black;
         color: black;
-        border-radius: 5px;
+        border-radius: 30px;
         text-align: center;
         margin: 0;
         transition: all 0.25s;
         font-size: 50px;
-
+    
         &:hover {
             transform: scale(1.04);
             background: whitesmoke;
@@ -49,7 +47,11 @@ const Styles = {
         background: whitesmoke;
         cursor: pointer;
     }
-`
+    `,
+
+    hcolor: css`
+        color: #007bff;
+    `
     
 };
 

@@ -7,6 +7,7 @@ import Home from "./components/Pages/Home/Home";
 import LoadingPage from "./components/Pages/LoadingPage/LoadingPage";
 import Login from "./components/Pages/Login/Login";
 import Register from "./components/Pages/Register/Register";
+import ContractDisplayPage from './components/Pages/ContractDisplayPage/ContractDisplayPage';
 
 type State = {};
 type Props = {};
@@ -22,10 +23,11 @@ export default class App extends React.Component<Props, State> {
             <BrowserRouter>
                 <Switch>
                     {/* Paths */}
-                    <Route path="/"             component={ Home }          exact/>
-                    <Route path="/about"        component={ About }         exact/>
-                    <Route path="/login"        component={ Login }         exact/>
-                    <Route path="/register"     component={ Register }      exact/>
+                    <Route path="/"                     component={ Home }                  exact/>
+                    <Route path="/about"                component={ About }                 exact/>
+                    <Route path="/login"                component={ Login }                 exact/>
+                    <Route path="/register"             component={ Register }              exact/>
+                    <Route path="/contractDisplay"      component={ ContractDisplayPage }   exact/>
                     {/* <Route path="/new-req"      component={  }          exact/> */}
                 </Switch>
             </BrowserRouter>
