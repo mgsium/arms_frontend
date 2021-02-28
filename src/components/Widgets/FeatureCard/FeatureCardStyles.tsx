@@ -7,7 +7,7 @@ const Styles = {
         width: 100%;
         height: 100%;
         padding: 10px;
-        margin: 10px;
+        margin: 10px 30px;
         transition: all 0.25s;
         display: inline-block;
 
@@ -25,6 +25,7 @@ const Styles = {
         & .card-description {
             font-family: Muli, sans-serif;
             color: #666;
+            font-size: 14pt;
         }
 
         &:hover {

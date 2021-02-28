@@ -8,6 +8,8 @@ import LoadingPage from "./components/Pages/LoadingPage/LoadingPage";
 import Login from "./components/Pages/Login/Login";
 import Register from "./components/Pages/Register/Register";
 import ContractDisplayPage from './components/Pages/ContractDisplayPage/ContractDisplayPage';
+import MakeOffer from "./components/Pages/MakeOffer/MakeOffer";
+import MakeRequest from "./components/Pages/MakeRequest/MakeRequest";
 
 type State = {};
 type Props = {};
@@ -28,6 +30,8 @@ export default class App extends React.Component<Props, State> {
                     <Route path="/login"                component={ Login }                 exact/>
                     <Route path="/register"             component={ Register }              exact/>
                     <Route path="/contractDisplay"      component={ ContractDisplayPage }   exact/>
+                    <Route path="/make-ofr"             component={ MakeOffer }             exact/>
+                    <Route path="/make-req"             component={ MakeRequest }           exact/>
                     {/* <Route path="/new-req"      component={  }          exact/> */}
                 </Switch>
             </BrowserRouter>

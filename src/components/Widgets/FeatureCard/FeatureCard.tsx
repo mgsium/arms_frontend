@@ -27,7 +27,7 @@ export default class FeatureCard extends React.Component<Props, State> {
                     src={this.props.imageUrl}
                     style={{ width: "100%", borderRadius: "1rem", marginBottom: 10 }}
                 />
-                <div style={{ margin: 12 }}>
+                <div style={{ margin: 20 }}>
                     <h5>
                         {/*<Circle size={12} style={{ verticalAlign: "middle", marginBottom: 3 }}/>&nbsp;&nbsp;*/}
                         {this.props.header}
