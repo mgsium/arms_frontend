@@ -25,7 +25,6 @@ export default class MentorRequestCard extends React.Component<Props, State> {
                     <p>{this.props.request.description}</p>
                     <hr/>
                     <section>
-                        {/* <img src="https://nmspace.fra1.digitaloceanspaces.com//assets/img/png/NamespacePlainLogo_2000x2000_rn.png" style={{ width: 50, height: 50, borderRadius: "50%", display: "inline-block" }} alt="Namespace Logo"/> */}
                         <div style={{ display: "inline-block", verticalAlign: "middle" }}>
                             <h6>A Request from <strong>Placeholder Name</strong></h6>
                         </div>

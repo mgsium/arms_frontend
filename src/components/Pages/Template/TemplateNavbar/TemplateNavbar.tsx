@@ -30,7 +30,7 @@ export default class TemplateNavbar extends React.Component<Props, State> {
                 <Link to="/about">
                     <NavBtn>About</NavBtn>
                 </Link>
-                <Link to="/make-req">
+                <Link to="/makeReq">
                     <NavBtn>Make a Request</NavBtn>
                 </Link>
                 <Link to="/make-ofr">
