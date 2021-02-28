@@ -4,7 +4,7 @@ import { cx } from "emotion";
 import Styles from "./RegisterStyles";
 import Template from "../Template/Template";
 import AuthCard from "../../Widgets/AuthCard/AuthCard";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, ToggleButtonGroup, ToggleButton } from "react-bootstrap";
 import UserBuilder from "../../../helpers/UserBuilder";
 import User from "../../../types/User";
 
@@ -67,7 +67,7 @@ export default class Register extends React.Component<Props, State> {
     }
 
     fieldsAreValid(): boolean {
-        return !!$("#email_field").val() && this.state.emailIsValid && !!$("#username_field").val() && !!$("#password_field").val() && !!$("#role_field").val();
+        return !!$("#email_field").val() && this.state.emailIsValid && !!$("#username_field").val() && !!$("#password_field").val() && !!$("#role_select").val();
     }
 
     submit() {
@@ -139,6 +139,12 @@ export default class Register extends React.Component<Props, State> {
                             <br/>
                             <Form.Group controlId="formRoleField">
                                 <Form.Label>I'm a...</Form.Label>
+                                <br/>
+                                <ToggleButtonGroup type="radio" name="options" id="role_select" onChange={this.updateMentorState}>
+                                    <ToggleButton value={"Mentee"}>Mentee</ToggleButton>
+                                    <ToggleButton value={"Mentor"}>Mentor</ToggleButton>
+                                </ToggleButtonGroup>
+                                {/**
                                 <Form.Control 
                                     size="lg" 
                                     as="select" 
@@ -149,6 +155,7 @@ export default class Register extends React.Component<Props, State> {
                                     <option>Mentor</option>
                                     <option>Mentee</option>
                                 </Form.Control>
+                                */}
                             </Form.Group>
                             <Button 
                                 size="lg" 

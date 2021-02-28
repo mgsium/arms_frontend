@@ -1,4 +1,4 @@
-import AuthCredentails from "../types/AuthCredentials";
+import AuthCredentials from "../types/AuthCredentials";
 
 export default class AuthCredentialsBuilder {
 
@@ -11,7 +11,7 @@ export default class AuthCredentialsBuilder {
     public getEmail() { return this.email }
     public getPassword() { return this.password }    
 
-    public buildUser(): AuthCredentails {
+    public buildUser(): AuthCredentials {
         return {
             email: this.email,
             password: this.password
