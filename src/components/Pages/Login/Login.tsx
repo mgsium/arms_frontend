@@ -64,6 +64,7 @@ export default class Login extends React.Component<Props, State> {
         fetch("http://localhost:3001/login", {
             headers: {"Content-Type": "application/json"},
             method: "POST",
+            credentials: "include",
             body: JSON.stringify(authCred)
         });
     }

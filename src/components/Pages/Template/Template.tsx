@@ -4,6 +4,7 @@ import { cx } from "emotion";
 import Styles from "./TemplateStyles";
 import TemplateNavbar from "./TemplateNavbar/TemplateNavbar";
 import TemplateFooter from "./TemplateFooter/TemplateFooter";
+import AuthSwitch from "../../../httpclient/AuthSwitch";
 
 type Props = {};
 type State = {};
@@ -12,6 +13,12 @@ export default class Template extends React.Component<Props, State> {
 
     constructor(props: Props) {
         super(props);
+
+        this.preprocess();
+    }
+
+    preprocess() {
+        AuthSwitch.getUser();
     }
 
     render() {
