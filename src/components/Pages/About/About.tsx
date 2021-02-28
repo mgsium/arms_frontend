@@ -3,7 +3,6 @@ import { cx } from "emotion";
 import Template from "../Template/Template";
 import { Col, Container, Row } from "react-bootstrap";
 import MentorRequestCard from "../../Widgets/MentorRequestCard/MentorRequestCard";
-import MentorRequestCardc from "../../Widgets/MentorRequestCardnumbertwo/MentorRequestCard";
 import Styles from "./AboutStyles";
 
 type Props = {};

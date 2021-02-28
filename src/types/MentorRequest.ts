@@ -1,13 +1,14 @@
 import Tag from "./Tag";
 
 type MentorRequest = {
+    id: string,
     name: string,
     description: string,
     location: {
         lat: number,
         lng: number
     },
-    Tag: Tag
+    tags: Tag[]
 };
 
 export default MentorRequest;

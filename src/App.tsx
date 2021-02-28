@@ -10,6 +10,7 @@ import Register from "./components/Pages/Register/Register";
 import ContractDisplayPage from './components/Pages/ContractDisplayPage/ContractDisplayPage';
 import MakeOffer from "./components/Pages/MakeOffer/MakeOffer";
 import MakeRequest from "./components/Pages/MakeRequest/MakeRequest";
+import RequestPage from "./components/Pages/RequestPage/RequestPage";
 
 type State = {};
 type Props = {};
@@ -32,6 +33,7 @@ export default class App extends React.Component<Props, State> {
                     <Route path="/contractDisplay"      component={ ContractDisplayPage }   exact/>
                     <Route path="/make-ofr"             component={ MakeOffer }             exact/>
                     <Route path="/make-req"             component={ MakeRequest }           exact/>
+                    <Route path="/request"              component={ RequestPage }           exact/>
                     {/* <Route path="/new-req"      component={  }          exact/> */}
                 </Switch>
             </BrowserRouter>
