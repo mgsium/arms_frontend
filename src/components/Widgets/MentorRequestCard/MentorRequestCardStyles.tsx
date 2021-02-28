@@ -7,12 +7,24 @@ const Styles = {
         transition: all 0.25s;
         border: 1px solid #DCDCDC;
         border-radius: 1rem;
-        padding: 20px;
+        padding: 40px;
         margin: 10px;
+
+        & p {
+            font-family: Muli, sans-serif;
+            color: #666;
+            margin-bottom: 0;
+            margin-top: 20px;
+            font-size: 14pt;
+        }
 
         & h2 {
             font-family: Quicksand, sans-serif;
             font-weight: bold;
+        }
+
+        & h6 {
+            font-family: Quicksand, sans-serif;
         }
 
         &:hover {
