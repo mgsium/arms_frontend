@@ -140,11 +140,6 @@ export default class Register extends React.Component<Props, State> {
                             <Form.Group controlId="formRoleField">
                                 <Form.Label>I'm a...</Form.Label>
                                 <br/>
-                                <ToggleButtonGroup type="radio" name="options" id="role_select" onChange={this.updateMentorState}>
-                                    <ToggleButton value={"Mentee"}>Mentee</ToggleButton>
-                                    <ToggleButton value={"Mentor"}>Mentor</ToggleButton>
-                                </ToggleButtonGroup>
-                                {/**
                                 <Form.Control 
                                     size="lg" 
                                     as="select" 
@@ -155,7 +150,6 @@ export default class Register extends React.Component<Props, State> {
                                     <option>Mentor</option>
                                     <option>Mentee</option>
                                 </Form.Control>
-                                */}
                             </Form.Group>
                             <Button 
                                 size="lg" 
